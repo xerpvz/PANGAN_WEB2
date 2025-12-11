@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\ContactController;
 
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 Route::middleware(['web'])->group(function () {
 
     // PUBLIC ROUTES
@@ -34,3 +36,4 @@ Route::middleware(['web'])->group(function () {
     Route::resource('portfolio', PortfolioController::class);
 });
 });
+

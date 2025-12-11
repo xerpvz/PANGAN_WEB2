@@ -612,7 +612,7 @@ section.scrolled, .work-card.scrolled, .skill-circle.scrolled, .about-image.scro
 /* ========================== */
 .work {
     padding: 8rem 10%;
-    background-color: #2a2a2a;
+    background-color:rgba(28, 28, 28, 0.80);
     color: #f5f5f5;
     text-align: center;
 }
@@ -773,4 +773,94 @@ section.scrolled, .work-card.scrolled, .skill-circle.scrolled, .about-image.scro
     .work-card {
         width: 80%;
     }
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 8rem 10%;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.contact-title {
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: #FF8BA0;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+/* LEFT INFO AREA */
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: #FF8BA0;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.contact-info li {
+    margin-bottom: 1rem;
+}
+
+/* FORM AREA */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-btn {
+    background-color: #FF8BA0;
+    padding: 1rem;
+    color: #000;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #ff6f89;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
 }

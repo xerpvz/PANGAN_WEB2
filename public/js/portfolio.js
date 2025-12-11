@@ -173,3 +173,21 @@ window.addEventListener("scroll", () => {
         header.classList.remove("scrolled");
     }
 });
+
+// Fade-in sections on scroll
+const section = document.querySelectorAll('section, .contact-info, .contact-form');
+
+function revealOnScroll() {
+    const scrollY = window.scrollY;
+    const innerHeight = window.innerHeight;
+
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top + scrollY;
+        if (scrollY + innerHeight > sectionTop + 100) {
+            section.classList.add('scrolled');
+        }
+    });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll(); // trigger on page load
